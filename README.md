@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Game of Thrones DataBase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##### [Ссылка на проект](https://desertoraposa.github.io/GOTDataBase/)
 
-## Available Scripts
+![](https://badgen.net/badge/Version/0.1.0/green)
+![](https://badgen.net/badge/license/MIT/blue)
 
-In the project directory, you can run:
+Актуальная версия проекта 0.1
 
-### `npm start`
+## Описание проекта
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Game of Thrones DB сервис, который позволяет получать данные из вселенной «Песнь льда и пламени» Джорджа Р. Р. Мартина.
+Сайт разделен на три раздела: 
+Characters - позволяет получить список персонажей по алфавиту.
+Houses - список домов и краткая информация о них.
+Books- список книг. Выбрав книгу из списка можно получить более детальную информацию. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Проект реализован в рамках изучения и использования на практике открытого ##### [API Ice And Fire](https://anapioficeandfire.com/).
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Зависимости проекта
 
-### `npm run build`
+Список DEV зависимостей:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    -@babel/core: ^7.12.10,
+    -@babel/eslint-parser: ^7.12.1,
+    -@babel/plugin-proposal-class-properties: ^7.12.1,
+    -@babel/plugin-proposal-export-default-from: ^7.12.1,
+    -@babel/plugin-syntax-jsx: ^7.12.1,
+    -@babel/plugin-transform-runtime: ^7.12.10,
+    -@babel/preset-env: ^7.12.11,
+    -@babel/preset-react: ^7.12.10,
+    -@babel/runtime: ^7.12.5,
+    -babel-loader: ^8.2.2,
+    -css-loader: ^5.0.1,
+    -eslint: ^7.18.0,
+    -eslint-config-airbnb: ^18.2.1,
+    -eslint-loader: ^4.0.2,
+    -eslint-plugin-import: ^2.22.1,
+    -eslint-plugin-jsx-a11y: ^6.4.1,
+    -eslint-plugin-react-hooks: ^4.2.0,
+    -file-loader: ^6.2.0,
+    -gh-pages: ^2.2.0,
+    -html-webpack-plugin: ^4.5.1,
+    -mini-css-extract-plugin: ^1.3.5,
+    -postcss: ^8.2.4,
+    -postcss-loader: ^4.2.0,
+    -react-hot-loader: ^4.13.0,
+    -style-loader: ^2.0.0,
+    -webpack: ^5.18.0,
+    -webpack-cli: ^4.4.0,
+    -webpack-dev-server: ^3.11.2
+    -babel-eslint: ^10.1.0,
+    -bootstrap: ^4.5.3,
+    -react: ^17.0.1,
+    -react-bootstrap: ^1.4.3,
+    -react-custom-scrollbars: ^4.2.1,
+    -react-dom: ^17.0.1,
+    -react-router-dom: ^5.2.0,
+    -react-scripts: 4.0.1,
+    -styled-components: ^5.2.1,
+    -url-loader: ^4.1.1
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Как развернуть проект
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Cкопировать проект к себе на компьютер: 
 
-### `npm run eject`
+    git clone https://github.com/DesertoRaposa/GOTDataBase.git
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Установить зависимости командой: 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Выполнить сборку и запустить:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    npm run build
+    nrm start
 
-## Learn More
+## Используемые технологии
+React.js, React Bootstrap, Webpack, GIT, Node.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
