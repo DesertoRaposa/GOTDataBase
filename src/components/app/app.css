@@ -1,0 +1,15 @@
+.bg{
+	background: url('../../img/rr.png') no-repeat;
+	background-size:cover;
+	max-width: 1440px;
+}
+
+.btn:focus, .btn:active {
+  box-shadow: none !important;
+}
+
+body {
+	background: url('../../img/blurbg.png') no-repeat;
+	background-size: cover;
+}
+
