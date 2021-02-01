@@ -8,7 +8,7 @@ import ErrorMessage from '../errorMessage';
 export default class RandomChar extends Component {
   gotService = new GotService();
 
-  static defaultProps = { interval: 6000 };// можно задавать параметры по умолчанию для пропсов
+  static defaultProps = { interval: 100000 };// можно задавать параметры по умолчанию для пропсов
 
   constructor(props) {
     super(props);

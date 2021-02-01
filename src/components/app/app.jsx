@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from '../header';
 import RandomChar from '../randomChar';
@@ -21,6 +21,16 @@ const Page = styled.div`
   margin: auto;
 `;
 
+const Title = () => (
+  <div className="d-flex mx-4 align-items-end title-height">
+    <div className="" md="5">
+      <h2 className="title text-light text-start">
+        Welcome to Game of Thrones DataBase.
+      </h2>
+    </div>
+  </div>
+);
+
 export default class App extends Component {
   gotService = new GotService();
 
@@ -36,18 +46,46 @@ export default class App extends Component {
     this.setState({ error: true });
   }
 
+  toggleRandomChar = () => {
+    const { showRandomChar } = this.state;
+    this.setState({
+      showRandomChar: !showRandomChar
+    });
+  }
+
   render() {
     const { showRandomChar, error } = this.state;
 
     if (error) {
       return <ErrorMessage />;
     }
-    const char = showRandomChar ? <RandomChar /> : null;
-
     return (
       <Router>
-        <Page>
-          <div className="app mx-4">
+        <Container className="my-4 shadow-lg rounded">
+          <Row>
+            <Col md="8" className="bg rounded">
+              <Route
+                path="/"
+                exact
+                component={() => <Title />}
+              />
+              <Button
+                className="toggle-btn mx-4 my-4 shadow-lg"
+                onClick={this.toggleRandomChar}
+              >
+                Show me a random character
+              </Button>
+              {showRandomChar ? null : <RandomChar />}
+            </Col>
+            <Col md="4" className="rounded-right white-bg">
+              2
+            </Col>
+          </Row>
+        </Container>
+
+        {/* <Page>
+
+          <div className="app mx-4 shadow-lg">
             <Container className="shadow-lg bg px-0 pb-4 rounded">
               <Header />
               <Row>
@@ -65,7 +103,7 @@ export default class App extends Component {
               <Route path="/houses" component={HousesPage} />
             </Container>
           </div>
-        </Page>
+        </Page> */}
       </Router>
     );
   }

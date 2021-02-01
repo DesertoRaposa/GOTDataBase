@@ -1,15 +1,43 @@
 .bg{
-	background: url('../../img/rr.png') no-repeat;
-	background-size:cover;
-	max-width: 1440px;
+	background:#38343f;
+	min-height: 800px;
 }
 
-.btn:focus, .btn:active {
+.white-bg {
+	background: #E0E0DA;
+}
+
+.btn:focus {
   box-shadow: none !important;
+  background-color: #c76b5e!important;
+  
+}
+/* #9A6258
+#c76b5e */
+.btn:active {
+  background-color: #9A6258;
 }
 
-body {
-	background: url('../../img/blurbg.png') no-repeat;
-	background-size: cover;
+.btn {
+  background-color: #9A6258;
+  border: none;
+}
+
+.btn:hover{
+  background-color: #c76b5e;
+}
+
+.btn:visited {
+  background-color: black;
+}
+
+
+.title {
+	max-width: 500px;
+	line-height: 1.5;
+}
+
+.title-height {
+	min-height: 200px;
 }
 
