@@ -1,5 +1,6 @@
 {
   "name": "gotdatabase",
+  "homepage": "https://github.com/DesertoRaposa/GOTDataBase",
   "version": "0.1.0",
   "private": true,
   "main": "index.js",
@@ -61,7 +62,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "file-loader": "^6.2.0",
-    "gh-pages": "^3.1.0",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^4.5.1",
     "mini-css-extract-plugin": "^1.3.5",
     "postcss": "^8.2.4",
