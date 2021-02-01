@@ -60,7 +60,7 @@ export default class App extends Component {
               <Route path="/books" component={BooksPage} exact />
               <Route
                 path="/books/:id"
-                render={({ match }) => { <BooksItem bookId={match.params.id} />; }}
+                render={(match) => <BooksItem bookId={match.match.params.id} />}
               />
               <Route path="/houses" component={HousesPage} />
             </Container>
