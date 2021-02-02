@@ -62,7 +62,7 @@ export default class App extends Component {
     return (
       <Router>
         <Container className="my-4 shadow-lg rounded containerwidth">
-          <Row>
+          <Row className="position-relative">
             <Col md="8" className="bg rounded">
               <Route
                 path="/"
@@ -77,15 +77,18 @@ export default class App extends Component {
                 Show me a random character
               </Button>
               <Col md="8" className="ml-2">
-                {showRandomChar ? <RandomChar /> : <RandomChar />}
+                {showRandomChar ? null : <RandomChar />}
               </Col>
               <div className="d-flex mx-4 flex-column">
                 <Header />
               </div>
             </Col>
-            <Col md="4" className="rounded-right white-bg">
-              
+            <Col md="4" className="rounded-right white-bg p-0">
+              <div className="glt"> </div>
+              <div className="vl"> </div>
+              <div className="glb"> </div>
             </Col>
+            <Route path="/" exact component={() => <div className="bg-info main-bg shadow"> </div>} />
           </Row>
         </Container>
 

@@ -2,7 +2,7 @@
   font-size: 18px;
 }
 
-hr {
+.navhr {
   max-width: 300px;
   margin-left: 0;
   border: 0;
@@ -15,6 +15,7 @@ hr {
   background-size: cover;
   width: 150px;
   height: 150px;
+  border-radius: .25rem;
 }
 .chars {
   background-image: url('../../img/char1.png');
@@ -30,7 +31,7 @@ hr {
 
 .cover {
   cursor: pointer;
-  background: linear-gradient(90deg, rgba(0,0,0,0.7161239495798319) 25%, rgba(0,0,0,0.5676645658263305) 47%, rgba(0,0,0,0.68531162464986) 81%);
+  background:  rgba(0,0,0,0.5);
   transition: all 0.3s ease-in-out;
   opacity: 1;
   position: absolute;
@@ -38,6 +39,7 @@ hr {
   right: 0;
   left: 0;
   bottom: 0;
+  border-radius: .25rem;
 }
 
 .cover:hover {
