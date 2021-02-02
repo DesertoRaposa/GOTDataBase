@@ -61,7 +61,7 @@ export default class App extends Component {
     }
     return (
       <Router>
-        <Container className="my-4 shadow-lg rounded">
+        <Container className="my-4 shadow-lg rounded containerwidth">
           <Row>
             <Col md="8" className="bg rounded">
               <Route
@@ -70,15 +70,21 @@ export default class App extends Component {
                 component={() => <Title />}
               />
               <Button
-                className="toggle-btn mx-4 my-4 shadow-lg"
+                className="m-4 shadow-lg text-light"
                 onClick={this.toggleRandomChar}
+                variant=""
               >
                 Show me a random character
               </Button>
-              {showRandomChar ? null : <RandomChar />}
+              <Col md="8" className="ml-2">
+                {showRandomChar ? <RandomChar /> : <RandomChar />}
+              </Col>
+              <div className="d-flex mx-4 flex-column">
+                <Header />
+              </div>
             </Col>
             <Col md="4" className="rounded-right white-bg">
-              2
+              
             </Col>
           </Row>
         </Container>

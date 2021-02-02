@@ -1,3 +1,49 @@
 .header-list li {
   font-size: 18px;
 }
+
+hr {
+  max-width: 300px;
+  margin-left: 0;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.801), rgba(160, 153, 153, 0.75), rgba(0, 0, 0, 0));
+}
+
+.navcard {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+.chars {
+  background-image: url('../../img/char1.png');
+}
+
+.books {
+  background-image: url('../../img/books4.png');
+}
+
+.houses {
+  background-image: url('../../img/houses.png');
+}
+
+.cover {
+  cursor: pointer;
+  background: linear-gradient(90deg, rgba(0,0,0,0.7161239495798319) 25%, rgba(0,0,0,0.5676645658263305) 47%, rgba(0,0,0,0.68531162464986) 81%);
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.cover:hover {
+  opacity: 0;
+}
+
+.linktitle {
+  max-width: 150px;
+}

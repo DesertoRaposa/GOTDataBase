@@ -12,9 +12,13 @@
 }
 
 .colorscheme {
-  background-color: #163744a9;
+  background-color: #9A6158;
 }
 
 .fs {
     font-size: 18px;
+}
+
+.card-bg {
+  background: #f5f6f7;
 }

@@ -77,25 +77,25 @@ const View = ({ char }) => {
   } = char;
   return (
     <>
-      <Card.Body className="text-center p-0">
-        <Card.Header className="text-white bg-dark fs">
+      <Card.Body className="text-center p-0 ">
+        <Card.Header className="text-white colorscheme fs p-2">
           Random Character:
           {` ${name}`}
         </Card.Header>
         <ListGroup variant="flush rounded">
-          <ListGroup.Item className="d-flex justify-content-between">
+          <ListGroup.Item className="d-flex justify-content-between py-2 card-bg">
             <span className="term">Gender </span>
             <span>{gender}</span>
           </ListGroup.Item>
-          <ListGroup.Item className="d-flex justify-content-between">
+          <ListGroup.Item className="d-flex justify-content-between card-bg">
             <span className="term">Born </span>
             <span>{born}</span>
           </ListGroup.Item>
-          <ListGroup.Item className="d-flex justify-content-between">
+          <ListGroup.Item className="d-flex justify-content-between card-bg">
             <span className="term">Died </span>
             <span>{died}</span>
           </ListGroup.Item>
-          <ListGroup.Item className="d-flex justify-content-between">
+          <ListGroup.Item className="d-flex justify-content-between card-bg">
             <span className="term">Culture </span>
             <span>{culture}</span>
           </ListGroup.Item>

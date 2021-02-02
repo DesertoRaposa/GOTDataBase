@@ -1,30 +1,28 @@
 .bg{
 	background:#38343f;
-	min-height: 800px;
+	min-height: 900px;
+}
+
+.containerwidth {
+  max-width: 1200px;
 }
 
 .white-bg {
 	background: #E0E0DA;
 }
 
-.btn:focus {
-  box-shadow: none !important;
-  background-color: #c76b5e!important;
-  
-}
-/* #9A6258
-#c76b5e */
 .btn:active {
   background-color: #9A6258;
 }
 
 .btn {
-  background-color: #9A6258;
+  background-color: #81654dd0;
   border: none;
 }
 
 .btn:hover{
-  background-color: #c76b5e;
+  background-color: #9A6258;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn:visited {
