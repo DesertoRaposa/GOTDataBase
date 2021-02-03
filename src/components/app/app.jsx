@@ -86,6 +86,7 @@ export default class App extends Component {
             </Col>
             <Col md="4" className="rounded-right white-bg p-0">
               <Route path="/characters" component={CharacterPage} />
+              <Route path="/houses" component={HousesPage} />
               <Route path="/" exact component={() => <> <div className="glt"/> <div className="vl"/> <div className="glb"/> </>} />
             </Col>
             <Route path="/" exact component={() => <div className="bg-info main-bg shadow"> </div>} />

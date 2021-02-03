@@ -57,7 +57,7 @@ export default class HousesPage extends Component {
     );
 
     return (
-      <Row>
+      <Row className="p-2 m-0">
         <RowBlock left={itemList} right={itemDetails} />
       </Row>
     );

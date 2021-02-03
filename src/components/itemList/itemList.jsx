@@ -51,8 +51,8 @@ export default class ItemList extends Component {
     const items = this.renderItems(itemList);
 
     return (
-      <Scrollbars style={{ height: 500 }} className="rounded my-4 shadow">
-        <ListGroup variant="flush" className="rounded shadow-lg item-list card-bg ">
+      <Scrollbars style={{ height: 500 }} className="rounded my-4">
+        <ListGroup variant="flush" className="rounded item-list card-bg shadow">
           {items}
         </ListGroup>
       </Scrollbars>
