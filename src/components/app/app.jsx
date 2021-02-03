@@ -64,11 +64,12 @@ export default class App extends Component {
         <Container className="my-4 shadow-lg rounded containerwidth">
           <Row className="position-relative">
             <Col md="8" className="bg rounded">
-              <Route
+              <Title />
+              {/* <Route
                 path="/"
                 exact
-                component={() => <Title />}
-              />
+                component={() => <Title />} //компонент появится только на главной странице
+              /> */}
               <Button
                 className="m-4 shadow-lg text-light"
                 onClick={this.toggleRandomChar}
@@ -84,9 +85,8 @@ export default class App extends Component {
               </div>
             </Col>
             <Col md="4" className="rounded-right white-bg p-0">
-              <div className="glt"> </div>
-              <div className="vl"> </div>
-              <div className="glb"> </div>
+              <Route path="/characters" component={CharacterPage} />
+              <Route path="/" exact component={() => <> <div className="glt"/> <div className="vl"/> <div className="glb"/> </>} />
             </Col>
             <Route path="/" exact component={() => <div className="bg-info main-bg shadow"> </div>} />
           </Row>

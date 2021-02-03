@@ -32,6 +32,7 @@ export default class ItemList extends Component {
       return (
         <ListGroup.Item
           key={id}
+          className="py-2 card-bg"
           onClick={() => onItemSelected(id)}
         >
           {label}
@@ -50,8 +51,8 @@ export default class ItemList extends Component {
     const items = this.renderItems(itemList);
 
     return (
-      <Scrollbars style={{ height: 350 }} className="rounded">
-        <ListGroup variant="flush" className="rounded shadow-lg item-list">
+      <Scrollbars style={{ height: 500 }} className="rounded my-4 shadow">
+        <ListGroup variant="flush" className="rounded shadow-lg item-list card-bg ">
           {items}
         </ListGroup>
       </Scrollbars>

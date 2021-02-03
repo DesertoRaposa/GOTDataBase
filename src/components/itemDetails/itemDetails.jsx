@@ -3,7 +3,7 @@ import './itemDetails.css';
 import { Card, ListGroup, Alert } from 'react-bootstrap';
 
 const Field = ({ item, field, label }) => (
-  <ListGroup.Item className="d-flex justify-content-between">
+  <ListGroup.Item className="d-flex justify-content-between py-2 card-bg ">
     <span className="item-width term text-left">
       {label}
     </span>
@@ -16,7 +16,7 @@ export {
 };
 
 const AlertMessage = () => (
-  <Alert variant="dark" className="rounded text-center colorscheme border-0 text-light">
+  <Alert variant="dark" className="rounded text-center colorscheme border-0 text-light shadow p-1">
     Please, select item in the list
   </Alert>
 );
@@ -61,7 +61,7 @@ export default class ItemDetails extends Component {
     return (
       <Card className="border-0 shadow-lg">
         <Card.Body className="text-center p-0">
-          <Card.Header className="text-white bg-dark fs">{name}</Card.Header>
+          <Card.Header className="text-white colorscheme fs p-2">{name}</Card.Header>
           <ListGroup variant="flush rounded">
             {
             React.Children.map(children, (child) => (
