@@ -30,8 +30,8 @@ export class BooksPage extends Component {
     }
 
     return (
-      <Row>
-        <Col md="5" className="ml-4">
+      <Row className="m-0">
+        <Col md="" className="px-4">
           <ItemList
             onItemSelected={(itemId) => {
               history.push(`/books/${itemId}`); // получаем history  как пропс с помощью withRouter, таким образом можем переключаться на страницу с книгой

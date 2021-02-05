@@ -39,7 +39,7 @@ export default class HousesPage extends Component {
     const itemList = (
       <ItemList
         onItemSelected={this.onItemSelected}
-        getData={this.gotService.getAllHouses}// здесь может быть любой метод из gotServices
+        getData={this.gotService.getAllHouses}
         renderItem={({ name, region }) => `${name} (${region})`}
       /> // отрисовать можно что угодно, имя, пол, регион
     );

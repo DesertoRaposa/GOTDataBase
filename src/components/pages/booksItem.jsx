@@ -9,7 +9,7 @@ export default class BooksItem extends Component {
   render() {
     const { bookId } = this.props;
     return (
-      <Col md="5" className="mx-auto pb-4">
+      <Col className="mx-auto py-4">
         <ItemDetails
           itemId={bookId} // инфо о выбранном элементе
           getData={this.gotService.getBook}

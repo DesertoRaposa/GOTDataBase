@@ -54,9 +54,11 @@ export default class ItemDetails extends Component {
   render() {
     const { item } = this.state;
     const { children } = this.props;
+
     if (!item) {
-      return <div><AlertMessage /></div>;
+      return null;
     }
+
     const { name } = item;
     return (
       <Card className="border-0 shadow-lg">
