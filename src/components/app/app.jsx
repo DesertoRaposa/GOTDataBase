@@ -13,11 +13,11 @@ import RandomChar from '../randomChar';
 import ErrorMessage from '../errorMessage';
 import GotService from '../../services/gotService';
 import {
-  CharacterPage,
   BooksPage,
   HousesPage,
   BooksItem
 } from '../pages';
+import CharList from '../charList';
 
 const Title = () => (
   <div className="d-flex mx-4 align-items-end title-height">
@@ -83,7 +83,7 @@ export default class App extends Component {
               </div>
             </Col>
             <Col md="4" className="rounded-right white-bg p-0">
-              <Route path="/characters" component={CharacterPage} />
+              <Route path="/characters" component={CharList} />
               <Route path="/houses" component={HousesPage} />
               <Route path="/books" component={BooksPage} exact />
               <Route
