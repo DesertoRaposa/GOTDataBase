@@ -7,7 +7,7 @@ import {
   Col,
   Button
 } from 'react-bootstrap';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 import Header from '../header';
 import RandomChar from '../randomChar';
 import ErrorMessage from '../errorMessage';
@@ -47,7 +47,7 @@ export default class App extends Component {
       return <ErrorMessage />;
     }
     return (
-      <Router>
+      <HashRouter basename="/">
         <Container className="my-4 shadow-lg rounded containerwidth">
           <Row className="position-relative">
             <Col md="8" className="bg rounded">
@@ -84,7 +84,7 @@ export default class App extends Component {
             <Route path="/" exact component={() => <div className="bg-info main-bg shadow"> </div>} />
           </Row>
         </Container>
-      </Router>
+      </HashRouter>
     );
   }
 }

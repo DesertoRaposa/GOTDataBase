@@ -20,7 +20,6 @@
   bottom: 0;
   background-image: url('../../img/2.png');
   background-size: cover;
-  /* border-radius: .25rem; */
 }
 
 .containerwidth {
@@ -31,19 +30,15 @@
 	background: #E0E0DA;
 }
 
-.btn:active {
-  background-color: #9A6258;
-}
-
 .btn {
-  background-color: #81654dd0;
+  background-color: #63686e;
   border: none;
   font-family: 'Jost', sans-serif;
   letter-spacing: 0.2px;
 }
 
-.btn:hover{
-  background-color: #9A6258;
+ .btn:hover{
+  background-color: #4c4b50;
   transition: all 0.3s ease-in-out;
 }
 
