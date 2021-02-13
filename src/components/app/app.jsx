@@ -18,16 +18,6 @@ import HousesList from '../housesList';
 import BooksList from '../booksList';
 import BooksCard from '../cards/bookCard';
 
-const Title = () => (
-  <div className="d-flex mx-4 align-items-end title-height">
-    <div className="" md="5">
-      <h2 className="title text-light text-start">
-        Welcome to Game of Thrones DataBase.
-      </h2>
-    </div>
-  </div>
-);
-
 export default class App extends Component {
   gotService = new GotService();
 
@@ -61,12 +51,13 @@ export default class App extends Component {
         <Container className="my-4 shadow-lg rounded containerwidth">
           <Row className="position-relative">
             <Col md="8" className="bg rounded">
-              <Title />
-              {/* <Route
-                path="/"
-                exact
-                component={() => <Title />} //компонент появится только на главной странице
-              /> */}
+              <div className="d-flex mx-4 align-items-end title-height">
+                <div className="" md="5">
+                  <h2 className="title text-light text-start">
+                    Welcome to Game of Thrones DataBase
+                  </h2>
+                </div>
+              </div>
               <Button
                 className="m-4 shadow-lg text-light"
                 onClick={this.toggleRandomChar}
@@ -74,24 +65,20 @@ export default class App extends Component {
               >
                 Show me a random character
               </Button>
-              <Col md="8" className="ml-2">
+              <Col md="8" className="ml-2 jost-font">
                 {showRandomChar ? <RandomChar /> : null }
               </Col>
               <div className="d-flex mx-4 flex-column">
                 <Header />
               </div>
             </Col>
-            <Col md="4" className="rounded-right white-bg p-0">
+            <Col md="4" className="rounded-right white-bg p-0 jost-font">
               <Route path="/characters" component={CharList} />
               <Route path="/houses" component={HousesList} />
               <Route path="/books" component={BooksList} exact />
               <Route
                 path="/books/:id"
                 render={(match) => <BooksCard bookId={match.match.params.id} />}
-              />
-              <Route
-                path="/"
-                exact
               />
             </Col>
             <Route path="/" exact component={() => <div className="bg-info main-bg shadow"> </div>} />

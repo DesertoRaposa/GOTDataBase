@@ -77,22 +77,18 @@ export default class CharList extends Component {
 
     const items = this.renderItems(charList);
 
-    const ItemList = (
-      <Scrollbars style={{ height: 500 }} className="rounded my-4">
-        <ListGroup
-          variant="flush"
-          className="rounded item-list card-bg shadow"
-        >
-          { items }
-        </ListGroup>
-      </Scrollbars>
-    );
-
     return (
       <Row className="p-2 m-0">
         <Col md="" className="py-4">
           <CharCard charId={selectedChar} />
-          {ItemList}
+          <Scrollbars style={{ height: 500 }} className="rounded my-4">
+            <ListGroup
+              variant="flush"
+              className="rounded item-list card-bg shadow cursor-pointer"
+            >
+              { items }
+            </ListGroup>
+          </Scrollbars>
         </Col>
       </Row>
     );

@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 const Header = () => (
   <>
     <div className="container p-0 my-4">
-      <h5 className="text-light fs-1 text font-weight-normal w-75">
+      <h5 className="text-light fs-1 text font-weight-normal w-75 raleway-font">
         Navigation
         <Link to="/" className="ml-4">
           Home
         </Link>
         <hr className="navhr" />
       </h5>
-      <div className="row py-3 col-md m-0 p-0 w-75">
+      <div className="row py-3 col-md m-0 p-0 w-75  jost-font">
         <div className="col-lg-12 col-xl-4 mb-4 mb-xl-2 pl-0 ">
           <Link to="/characters/" className="bg-info">
             <div className="navcard chars position-relative shadow-lg">

@@ -1,6 +1,7 @@
+
 body {
   margin: 0 ;
-  background-color:#34303b; 
+  background-color:#34303b;
 }
 
 a {
@@ -27,3 +28,13 @@ a:active {
 .itempadding {
  padding:10px 15px 10px 15px;
 }
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.jost-font {
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 0.2px;
+}
+

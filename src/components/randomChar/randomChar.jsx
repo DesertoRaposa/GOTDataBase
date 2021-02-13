@@ -82,7 +82,7 @@ const View = ({ char }) => {
           Random Character:
           {` ${name}`}
         </Card.Header>
-        <ListGroup variant="flush rounded">
+        <ListGroup variant="flush rounded-bottom">
           <ListGroup.Item className="d-flex justify-content-between py-2 card-bg">
             <span className="term">Gender </span>
             <span>{gender}</span>

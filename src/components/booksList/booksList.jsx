@@ -79,7 +79,7 @@ export class BooksList extends Component {
           <Scrollbars style={{ height: 500 }} className="rounded my-4">
             <ListGroup
               variant="flush"
-              className="rounded item-list card-bg shadow"
+              className="rounded item-list card-bg shadow cursor-pointer"
             >
               { this.renderItems(booksList) }
             </ListGroup>

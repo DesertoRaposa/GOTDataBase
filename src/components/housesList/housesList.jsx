@@ -77,22 +77,18 @@ export default class HousesList extends Component {
 
     const items = this.renderItems(housesList);
 
-    const ItemList = (
-      <Scrollbars style={{ height: 500 }} className="rounded my-4">
-        <ListGroup
-          variant="flush"
-          className="rounded item-list card-bg shadow"
-        >
-          { items }
-        </ListGroup>
-      </Scrollbars>
-    );
-
     return (
       <Row className="p-2 m-0">
         <Col md="" className="py-4">
           <HouseCard houseID={selectedHouse} />
-          {ItemList}
+          <Scrollbars style={{ height: 500 }} className="rounded my-4">
+            <ListGroup
+              variant="flush"
+              className="rounded item-list card-bg shadow cursor-pointer"
+            >
+              { items }
+            </ListGroup>
+          </Scrollbars>
         </Col>
       </Row>
     );
