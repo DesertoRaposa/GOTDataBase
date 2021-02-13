@@ -47,7 +47,7 @@ export default class App extends Component {
       return <ErrorMessage />;
     }
     return (
-      <HashRouter basename="/">
+      <HashRouter basename="/DesertoRaposa/GOTDataBase">
         <Container className="my-4 shadow-lg rounded containerwidth">
           <Row className="position-relative">
             <Col md="8" className="bg rounded">
