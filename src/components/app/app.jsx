@@ -12,12 +12,11 @@ import Header from '../header';
 import RandomChar from '../randomChar';
 import ErrorMessage from '../errorMessage';
 import GotService from '../../services/gotService';
-import {
-  BooksPage,
-  BooksItem
-} from '../pages';
+
 import CharList from '../charList';
 import HousesList from '../housesList';
+import BooksList from '../booksList';
+import BooksCard from '../cards/bookCard';
 
 const Title = () => (
   <div className="d-flex mx-4 align-items-end title-height">
@@ -35,7 +34,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showRandomChar: true,
+      showRandomChar: false,
       error: false
     };
   }
@@ -76,7 +75,7 @@ export default class App extends Component {
                 Show me a random character
               </Button>
               <Col md="8" className="ml-2">
-                {showRandomChar ? null : <RandomChar />}
+                {showRandomChar ? <RandomChar /> : null }
               </Col>
               <div className="d-flex mx-4 flex-column">
                 <Header />
@@ -85,10 +84,10 @@ export default class App extends Component {
             <Col md="4" className="rounded-right white-bg p-0">
               <Route path="/characters" component={CharList} />
               <Route path="/houses" component={HousesList} />
-              <Route path="/books" component={BooksPage} exact />
+              <Route path="/books" component={BooksList} exact />
               <Route
                 path="/books/:id"
-                render={(match) => <BooksItem bookId={match.match.params.id} />}
+                render={(match) => <BooksCard bookId={match.match.params.id} />}
               />
               <Route
                 path="/"

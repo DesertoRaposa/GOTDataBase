@@ -58,7 +58,7 @@ export default class RandomChar extends Component {
     const content = !(loading || error) ? <View char={char} /> : null;
 
     return (
-      <Card className="border-0 shadow-lg my-4">
+      <Card className="border-0  my-4 bg-color">
         {errorMessage}
         {spinner}
         {content}

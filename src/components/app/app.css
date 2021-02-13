@@ -3,6 +3,10 @@
 	min-height: 900px;
 }
 
+.bg-color {
+  background:#38343f;
+}
+
 .main-bg {
   width: 400px;
   height: 600px;
@@ -11,7 +15,7 @@
   right: 15px;
   left: 650px;
   bottom: 0;
-  background-image: url('../../img/1.png');
+  background-image: url('../../img/2.png');
   background-size: cover;
   /* border-radius: .25rem; */
 }
