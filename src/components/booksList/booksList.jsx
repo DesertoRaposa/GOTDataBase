@@ -75,8 +75,8 @@ export class BooksList extends Component {
 
     return (
       <Row className="p-2 m-0">
-        <Col md="" className="py-4">
-          <Scrollbars style={{ height: 500 }} className="rounded my-4">
+        <Col md="" className="">
+          <Scrollbars style={{ height: 500 }} className="rounded my-3">
             <ListGroup
               variant="flush"
               className="rounded item-list card-bg shadow cursor-pointer"

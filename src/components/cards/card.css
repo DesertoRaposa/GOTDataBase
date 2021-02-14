@@ -1,0 +1,49 @@
+.book_1b {
+  background-image: url('../../img/1b.jpg'); 
+}
+
+.book_2b {
+  background-image: url('../../img/2b.jpg'); 
+}
+
+.book_3b {
+  background-image: url('../../img/3b.png'); 
+}
+
+.book_4b {
+  background-image: url('../../img/4b.png'); 
+}
+
+.book_5b {
+  background-image: url('../../img/5b.jpg'); 
+}
+
+.book_6b {
+  background-image: url('../../img/6b.png'); 
+}
+
+.book_7b {
+  background-image: url('../../img/7b.png'); 
+}
+
+.book_8b {
+  background-image: url('../../img/8b.png'); 
+}
+
+.book_9b {
+  background-image: url('../../img/9b.png'); 
+}
+
+.book_10b {
+  background-image: url('../../img/10b.png'); 
+}
+
+
+.book_cover {
+  width: 250px;
+  height: 380px;
+  background-color: #eee;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}

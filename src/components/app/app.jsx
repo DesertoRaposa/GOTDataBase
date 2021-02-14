@@ -81,7 +81,7 @@ export default class App extends Component {
                 render={(match) => <BooksCard bookId={match.match.params.id} />}
               />
             </Col>
-            <Route path="/" exact component={() => <div className="bg-info main-bg shadow"> </div>} />
+            <Route path="/" exact component={() => <div className="main-bg shadow"> </div>} />
           </Row>
         </Container>
       </HashRouter>
